@@ -10,16 +10,16 @@ const Header = () => {
           <h1 className="text-2xl font-bold">Welcome back, Vincent 👋</h1>
         </div>
         <div className="flex items-center space-x-4">
-          <span>🔍</span> {/* Placeholder icon */}
-          <span>🔔</span> {/* Placeholder icon */}
+          <Button>🔍</Button>
+          <Button>🔔</Button>
           <span>📅 19 May 2022</span>
           <Avatar src="https://i.pravatar.cc/32" alt="User Avatar" />
         </div>
       </div>
       <div className="flex justify-end items-center space-x-4">
-        <Button className="hover:bg-gray-200 dark:hover:bg-gray-700">Filter</Button>
-        <Button className="hover:bg-gray-200 dark:hover:bg-gray-700">Sort</Button>
-        <Button className="bg-blue-500 text-white">New template</Button>
+        <Button>Filter</Button>
+        <Button>Sort</Button>
+        <Button className="bg-blue-500 text-white transition-colors duration-300 ease-in-out hover:bg-blue-600 active:bg-blue-700">New template</Button>
       </div>
     </header>
   );

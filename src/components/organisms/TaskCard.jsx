@@ -6,7 +6,7 @@ import Button from '../atoms/Button';
 
 const TaskCard = ({ task }) => {
   return (
-    <div className="bg-white dark:bg-gray-700 rounded-lg p-4 shadow">
+    <div className="bg-white dark:bg-gray-700 rounded-lg p-4 shadow cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-xl">
       {task.image && <img src={task.image} alt={task.title} className="rounded-lg mb-4" />}
       <div className="flex space-x-2 mb-2">
           {task.tags && task.tags.map(tag => (

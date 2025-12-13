@@ -9,7 +9,10 @@ const ProgressBar = ({ progress }) => {
 
   return (
     <div className="w-full bg-gray-200 rounded-full h-1.5 dark:bg-gray-600">
-      <div className={`${getProgressBarColor(progress)} h-1.5 rounded-full`} style={{ width: `${progress}%` }}></div>
+      <div
+        className={`${getProgressBarColor(progress)} h-1.5 rounded-full transition-all duration-500 ease-in-out`}
+        style={{ width: `${progress}%` }}
+      ></div>
     </div>
   );
 };

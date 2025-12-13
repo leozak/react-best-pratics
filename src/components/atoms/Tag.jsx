@@ -14,7 +14,7 @@ const Tag = ({ children, color }) => {
   };
 
   return (
-    <span className={`text-xs font-semibold px-2 py-1 rounded-full ${getTagColor(color)}`}>
+    <span className={`text-xs font-semibold px-2 py-1 rounded-full transition-transform duration-200 ease-in-out hover:scale-110 cursor-pointer ${getTagColor(color)}`}>
       {children}
     </span>
   );
